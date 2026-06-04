@@ -1,22 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Contact the Crimson Dusk Gaming team - Anamay Mukherji & Arnav Pandey. Send a message or connect directly.">
+    <meta name="description"
+        content="Contact the Crimson Dusk Gaming team - Anamay Mukherji & Arnav Pandey. Send a message or connect directly.">
     <title>Contact Us | Crimson Dusk Gaming</title>
     <!-- FontAwesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Main Stylesheet -->
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
     <!-- Navigation Header -->
     <nav class="navbar">
         <div class="container navbar-container">
             <a href="index.html" class="brand">
-                <i class="fa-solid fa-gamepad"></i> Crimson Dusk
+                <img src="logo.png" alt="Crimson Dusk Gaming Logo" class="brand-logo">
+                <span class="brand-text">Crimson Dusk</span>
             </a>
             <ul class="nav-menu">
                 <li><a href="index.html" class="nav-link"><i class="fa-solid fa-house"></i> Home</a></li>
@@ -34,51 +38,59 @@
 
     <!-- Subpage Container -->
     <main class="subpage-container container">
-        
+
         <!-- Back Button -->
         <div class="back-btn-container">
             <a href="index.html" class="action-btn btn-saffron" style="display: inline-flex; width: fit-content;">
                 <i class="fa-solid fa-arrow-left"></i> Back to Home
             </a>
         </div>
-        
+
         <h1 class="section-title" style="text-align: left; margin-bottom: 10px; font-size: 2.5rem;">Get In Touch</h1>
-        <p style="color: var(--text-secondary); margin-bottom: 40px; font-size: 1.1rem;">Have questions, project proposals, or collaboration ideas? Reach out to us!</p>
+        <p style="color: var(--text-secondary); margin-bottom: 40px; font-size: 1.1rem;">Have questions, project
+            proposals, or collaboration ideas? Reach out to us!</p>
 
         <!-- Contact Grid -->
         <div class="contact-grid">
-            
+
             <!-- Column 1: Info Cards -->
             <div class="contact-info-panel">
                 <h2 style="font-family: var(--font-heading); font-size: 1.6rem; margin-bottom: 5px;">Direct Contact</h2>
-                <p style="color: var(--text-secondary); margin-bottom: 20px;">Feel free to drop a direct email or ping us via Telegram.</p>
-                
+                <p style="color: var(--text-secondary); margin-bottom: 20px;">Feel free to drop a direct email or ping
+                    us via Telegram.</p>
+
                 <!-- Anamay Card -->
                 <div class="info-card" style="border-left: 4px solid var(--accent-saffron);">
                     <h3>Anamay Mukherji</h3>
                     <p style="font-weight: 500; color: var(--text-primary); margin-bottom: 10px;">Founder</p>
-                    <p><i class="fa-regular fa-envelope" style="width: 20px; color: var(--accent-saffron);"></i> anamayamukherji642@gmail.com</p>
-                    <p><i class="fa-brands fa-telegram" style="width: 20px; color: var(--accent-saffron);"></i> @anamay8393</p>
+                    <p><i class="fa-regular fa-envelope" style="width: 20px; color: var(--accent-saffron);"></i>
+                        anamayamukherji642@gmail.com</p>
+                    <p><i class="fa-brands fa-telegram" style="width: 20px; color: var(--accent-saffron);"></i>
+                        @anamay8393</p>
                 </div>
 
                 <!-- Arnav Card -->
                 <div class="info-card" style="border-left: 4px solid var(--accent-green);">
                     <h3>Arnav Pandey</h3>
                     <p style="font-weight: 500; color: var(--text-primary); margin-bottom: 10px;">Co-Founder</p>
-                    <p><i class="fa-regular fa-envelope" style="width: 20px; color: var(--accent-green);"></i> arnavkumarpanday@gmail.com</p>
-                    <p><i class="fa-brands fa-telegram" style="width: 20px; color: var(--accent-green);"></i> @Arnav_ID</p>
+                    <p><i class="fa-regular fa-envelope" style="width: 20px; color: var(--accent-green);"></i>
+                        arnavkumarpanday@gmail.com</p>
+                    <p><i class="fa-brands fa-telegram" style="width: 20px; color: var(--accent-green);"></i> @Arnav_ID
+                    </p>
                 </div>
             </div>
-            
+
             <!-- Column 2: Netlify Form -->
             <div class="contact-form-panel">
-                <h2 style="font-family: var(--font-heading); font-size: 1.6rem; margin-bottom: 5px; text-align: left;">Send a Message</h2>
-                <p style="color: var(--text-secondary); margin-bottom: 25px; text-align: left;">We'll get back to you as soon as possible.</p>
-                
+                <h2 style="font-family: var(--font-heading); font-size: 1.6rem; margin-bottom: 5px; text-align: left;">
+                    Send a Message</h2>
+                <p style="color: var(--text-secondary); margin-bottom: 25px; text-align: left;">We'll get back to you as
+                    soon as possible.</p>
+
                 <form id="contactForm" name="contact" method="POST" data-netlify="true">
                     <!-- Netlify Form Name Identifier -->
                     <input type="hidden" name="form-name" value="contact">
-                    
+
                     <div class="form-group">
                         <label for="name" class="form-label">Full Name</label>
                         <input type="text" id="name" name="name" class="form-control" placeholder="Your Name" required>
@@ -86,17 +98,20 @@
 
                     <div class="form-group">
                         <label for="email" class="form-label">Email Address</label>
-                        <input type="email" id="email" name="email" class="form-control" placeholder="Your Email" required>
+                        <input type="email" id="email" name="email" class="form-control" placeholder="Your Email"
+                            required>
                     </div>
 
                     <div class="form-group">
                         <label for="subject" class="form-label">Subject</label>
-                        <input type="text" id="subject" name="subject" class="form-control" placeholder="How can we help?" required>
+                        <input type="text" id="subject" name="subject" class="form-control"
+                            placeholder="How can we help?" required>
                     </div>
 
                     <div class="form-group">
                         <label for="message" class="form-label">Message</label>
-                        <textarea id="message" name="message" class="form-control" placeholder="Write your message here..." required></textarea>
+                        <textarea id="message" name="message" class="form-control"
+                            placeholder="Write your message here..." required></textarea>
                     </div>
 
                     <button type="submit" class="submit-btn">
@@ -106,19 +121,24 @@
                     <div id="formStatus" class="form-status"></div>
                 </form>
             </div>
-            
+
         </div>
     </main>
 
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <div class="footer-logo">Crimson Dusk Gaming</div>
-            <p>&copy; 2026 Anamay Mukherji & Arnav Pandey. All rights reserved.</p>
+            <div class="footer-logo"
+                style="display: inline-flex; align-items: center; gap: 10px; justify-content: center;">
+                <img src="logo.png" alt="Crimson Dusk Logo" style="height: 30px; width: auto; border-radius: 5px;">
+                <span class="brand-text">Crimson Dusk Gaming</span>
+            </div>
+            <p style="margin-top: 10px;">&copy; 2026 Anamay Mukherji & Arnav Pandey. All rights reserved.</p>
         </div>
     </footer>
 
     <!-- Main JavaScript -->
     <script src="script.js"></script>
 </body>
+
 </html>

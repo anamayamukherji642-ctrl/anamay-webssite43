@@ -22,7 +22,8 @@
     <nav class="navbar">
         <div class="container navbar-container">
             <a href="index.html" class="brand">
-                <i class="fa-solid fa-gamepad"></i> Crimson Dusk
+                <img src="logo.png" alt="Crimson Dusk Gaming Logo" class="brand-logo">
+                <span class="brand-text">Crimson Dusk</span>
             </a>
             <ul class="nav-menu">
                 <li><a href="index.html" class="nav-link"><i class="fa-solid fa-house"></i> Home</a></li>
@@ -50,6 +51,9 @@
 
     <!-- Hero Section -->
     <header class="hero-section container">
+        <div class="hero-logo-container">
+            <img src="logo.png" alt="Crimson Dusk Logo" class="hero-logo-img">
+        </div>
         <h1 class="hero-title">Crimson Dusk Gaming</h1>
         <p class="hero-subtitle">Lead Content Creators & Tech Strategists</p>
 
@@ -86,7 +90,6 @@
                 technology, and implement data-driven digital growth strategies.
             </p>
         </div>
-
         <!-- Action Grid / Navigation Buttons -->
         <div class="action-grid">
             <a href="projects.html" class="action-btn btn-saffron">
@@ -103,6 +106,18 @@
             </a>
         </div>
     </header>
+
+    <!-- Video Showcase Section -->
+    <section class="video-showcase-container container">
+        <h2 class="section-title">Featured Content Showcase</h2>
+        <div class="video-showcase">
+            <div class="video-wrapper">
+                <iframe src="https://www.youtube.com/embed/Ke1Y333uUC8" title="Crimson Dusk Gaming Featured Video"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
 
     <!-- Skills Section -->
     <section id="skills" class="section-padding container">
@@ -181,11 +196,57 @@
         </div>
     </section>
 
+    <!-- Testimonials Section -->
+    <section class="testimonials-section container">
+        <h2 class="section-title">What Collaborators Say</h2>
+        <div class="slider-container">
+            <div class="testimonial-slider" id="testimonialSlider">
+                <!-- Slide 1 -->
+                <div class="testimonial-slide">
+                    <p class="testimonial-quote">
+                        "Working with the Crimson Dusk team has been an incredible experience. Their tech setups and
+                        audience strategies are top-tier, driving amazing results for our joint content campaigns."
+                    </p>
+                    <div class="testimonial-author">
+                        <img src="WhatsApp Image 2026-06-04 at 3.35.36 AM.jpeg" alt="Yatindra Nath Bhatt">
+                        <div class="testimonial-author-info">
+                            <h4>Yatindra Nath Bhatt</h4>
+                            <p>Creative Collaborator</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Slide 2 -->
+                <div class="testimonial-slide">
+                    <p class="testimonial-quote">
+                        "The technical precision and analytical optimization that Anamay and Arnav bring to the table is
+                        unmatched. They don't just create content, they optimize the entire delivery pipeline."
+                    </p>
+                    <div class="testimonial-author">
+                        <img src="WhatsApp Image 2026-06-04 at 3.36.34 AM.jpeg" alt="Pradeep Kumar Mukherjee">
+                        <div class="testimonial-author-info">
+                            <h4>Pradeep Kumar Mukherjee</h4>
+                            <p>Technical Insights Lead</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Slider Controls -->
+            <div class="slider-controls" id="sliderControls">
+                <span class="slider-dot active" data-index="0"></span>
+                <span class="slider-dot" data-index="1"></span>
+            </div>
+        </div>
+    </section>
+
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <div class="footer-logo">Crimson Dusk Gaming</div>
-            <p>&copy; 2026 Anamay Mukherji & Arnav Pandey. All rights reserved.</p>
+            <div class="footer-logo"
+                style="display: inline-flex; align-items: center; gap: 10px; justify-content: center;">
+                <img src="logo.png" alt="Crimson Dusk Logo" style="height: 30px; width: auto; border-radius: 5px;">
+                <span class="brand-text">Crimson Dusk Gaming</span>
+            </div>
+            <p style="margin-top: 10px;">&copy; 2026 Anamay Mukherji & Arnav Pandey. All rights reserved.</p>
         </div>
     </footer>
 
