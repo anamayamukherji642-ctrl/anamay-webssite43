@@ -1,42 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Growth | Anamay Mukherji</title>
+    <meta name="description"
+        content="Personal Growth & Initiatives by Crimson Dusk Gaming - gardening, local history research, and device optimization.">
+    <title>Personal Growth & Initiatives | Crimson Dusk Gaming</title>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Main Stylesheet -->
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <div class="project-page-content" style="padding: 60px 20px; max-width: 900px; margin: auto;">
-        <!-- Navigation to Home -->
-        <a href="index.html" class="nav-btn btn-1" style="display: inline-block; margin-bottom: 30px; font-size: 0.8rem; padding: 10px 20px;">← Back to Home</a>
-        
-        <h1 style="font-size: 2.5rem; margin-bottom: 20px;">Personal Growth & Initiatives</h1>
-        <p style="color: #aaa; margin-bottom: 40px;">Deep dive into my hobbies, history research, and sustainable practices.</p>
+    <!-- Navigation Header -->
+    <nav class="navbar">
+        <div class="container navbar-container">
+            <a href="index.html" class="brand">
+                <i class="fa-solid fa-gamepad"></i> Crimson Dusk
+            </a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link"><i class="fa-solid fa-house"></i> Home</a></li>
+                <li><a href="projects.html" class="nav-link"><i class="fa-solid fa-rocket"></i> Projects</a></li>
+                <li><a href="project2.html" class="nav-link active"><i class="fa-solid fa-compass"></i> Interests</a>
+                </li>
+                <li><a href="contact.html" class="nav-link"><i class="fa-solid fa-envelope"></i> Contact</a></li>
+                <li>
+                    <button id="themeToggle" class="theme-toggle-btn">
+                        <i class="fa-solid fa-moon"></i> Dark Mode
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </nav>
 
-        <!-- Topic 1: Gardening -->
-        <div class="partner-card" style="margin-bottom: 30px; text-align: left; border-left: 5px solid #00d2d3;">
-            <h3 style="color: #00d2d3; margin-bottom: 10px;">🌱 Green Initiative: Home Gardening</h3>
-            <p>Cultivating a personal nursery with Peepal, Mango, and Sweet Tamarind saplings. Utilizing sustainable techniques like vermicompost and cocopeat to ensure healthy growth and environmental awareness.</p>
+    <!-- Subpage Container -->
+    <main class="subpage-container container">
+
+        <!-- Back Button -->
+        <div class="back-btn-container">
+            <a href="index.html" class="action-btn btn-saffron" style="display: inline-flex; width: fit-content;">
+                <i class="fa-solid fa-arrow-left"></i> Back to Home
+            </a>
         </div>
 
-        <!-- Topic 2: History -->
-        <div class="partner-card" style="margin-bottom: 30px; text-align: left; border-left: 5px solid #00d2d3;">
-            <h3 style="color: #00d2d3; margin-bottom: 10px;">🏛️ Colonial Kanpur History</h3>
-            <p>Researching the architectural evolution of Kanpur's colonial-era buildings. Documenting judicial complexes and heritage sites to preserve the local historical narrative.</p>
-        </div>
+        <h1 class="section-title" style="text-align: left; margin-bottom: 10px; font-size: 2.5rem;">Personal Growth &
+            Initiatives</h1>
+        <p style="color: var(--text-secondary); margin-bottom: 40px; font-size: 1.1rem;">Deep dive into my hobbies,
+            historical research, and sustainable practices.</p>
 
-        <!-- Topic 3: Tech -->
-        <div class="partner-card" style="margin-bottom: 30px; text-align: left; border-left: 5px solid #00d2d3;">
-            <h3 style="color: #00d2d3; margin-bottom: 10px;">⚙️ Device Efficiency Optimization</h3>
-            <p>Standardizing maintenance procedures for home technology, specifically the Philips Shaver series and Prestige induction systems, to increase device longevity and operational efficiency.</p>
-        </div>
-    </div>
+        <!-- Interests List -->
+        <div class="project-list">
 
-    <footer style="text-align: center; padding: 40px; color: #555;">
-        <p>&copy; 2026 Anamay Mukherji. All Rights Reserved.</p>
+            <!-- Topic 1: Gardening -->
+            <div class="project-card">
+                <h3><i class="fa-solid fa-seedling" style="color: var(--accent-green);"></i> Green Initiative: Home
+                    Gardening</h3>
+                <p>Cultivating a personal nursery with Peepal, Mango, and Sweet Tamarind saplings. Utilizing sustainable
+                    techniques like vermicompost and cocopeat to ensure healthy growth and environmental awareness.</p>
+            </div>
+
+            <!-- Topic 2: History -->
+            <div class="project-card">
+                <h3><i class="fa-solid fa-building-columns" style="color: var(--accent-green);"></i> Colonial Kanpur
+                    History</h3>
+                <p>Researching the architectural evolution of Kanpur's colonial-era buildings. Documenting judicial
+                    complexes and heritage sites to preserve the local historical narrative.</p>
+            </div>
+
+            <!-- Topic 3: Tech -->
+            <div class="project-card">
+                <h3><i class="fa-solid fa-gears" style="color: var(--accent-green);"></i> Device Efficiency Optimization
+                </h3>
+                <p>Standardizing maintenance procedures for home technology, specifically the Philips Shaver series and
+                    Prestige induction systems, to increase device longevity and operational efficiency.</p>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-logo">Crimson Dusk Gaming</div>
+            <p>&copy; 2026 Anamay Mukherji & Arnav Pandey. All rights reserved.</p>
+        </div>
     </footer>
 
+    <!-- Main JavaScript -->
+    <script src="script.js"></script>
 </body>
+
 </html>

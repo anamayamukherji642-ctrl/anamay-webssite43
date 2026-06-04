@@ -1,75 +1,196 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Crimson Dusk Gaming Official Portfolio - Lead Content Creator & Tech Strategist. Explore projects, digital marketing, and technical strategy.">
+    <meta name="author" content="Anamay Mukherji & Arnav Pandey">
+    <meta name="keywords"
+        content="Crimson Dusk Gaming, Gaming Channel, Content Creator, Tech Strategist, Anamay Mukherji, Arnav Pandey, Portfolio, Video Editing, Digital Marketing">
     <title>Crimson Dusk Gaming | Official Portfolio</title>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Main Stylesheet -->
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <marquee scrollamount="12" class="ticker">
-        Welcome to my Official Portfolio! | Content Creator & Tech Strategist | Join my journey of Digital Marketing & Gaming | Follow me on social media for latest updates!
-    </marquee>
+    <!-- Navigation Header -->
+    <nav class="navbar">
+        <div class="container navbar-container">
+            <a href="index.html" class="brand">
+                <i class="fa-solid fa-gamepad"></i> Crimson Dusk
+            </a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link"><i class="fa-solid fa-house"></i> Home</a></li>
+                <li><a href="projects.html" class="nav-link"><i class="fa-solid fa-rocket"></i> Projects</a></li>
+                <li><a href="project2.html" class="nav-link"><i class="fa-solid fa-compass"></i> Interests</a></li>
+                <li><a href="contact.html" class="nav-link"><i class="fa-solid fa-envelope"></i> Contact</a></li>
+                <li>
+                    <button id="themeToggle" class="theme-toggle-btn">
+                        <i class="fa-solid fa-moon"></i> Dark Mode
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </nav>
 
-    <header class="hero">
-        <h1>Crimson Dusk Gaming</h1>
-        <p>Lead Content Creator & Tech Strategist</p>
-        
-        <div class="founders-container">
-            <div class="founder-card">
-                <img src="WhatsApp Image 2026-06-04 at 2.46.51 AM.jpeg" alt="Anamay Mukherji" class="profile-img">
+    <!-- Scrolling Ticker -->
+    <div class="ticker-container">
+        <div class="ticker-content">
+            <marquee scrollamount="8" class="ticker">
+                🚀 Welcome to the Official Portfolio! | Content Creation & Tech Strategy | Digital Marketing & Gaming |
+                Check out our latest project initiatives below!
+            </marquee>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <header class="hero-section container">
+        <h1 class="hero-title">Crimson Dusk Gaming</h1>
+        <p class="hero-subtitle">Lead Content Creators & Tech Strategists</p>
+
+        <!-- Founders Section -->
+        <div class="profile-grid">
+            <div class="profile-card">
+                <div class="profile-card-image-wrapper">
+                    <img src="WhatsApp Image 2026-06-04 at 2.46.51 AM.jpeg" alt="Anamay Mukherji"
+                        class="profile-card-img">
+                </div>
                 <h3>Anamay Mukherji</h3>
-                <p>Founder</p>
+                <p class="role">Founder & Tech Strategist</p>
+                <p class="bio">Passionate about building digital experiences, technical strategy, and optimizing modern
+                    computing systems.</p>
             </div>
-            <div class="founder-card">
-                <img src="WhatsApp Image 2026-06-04 at 10.17.42 PM.jpeg" alt="Arnav Pandey" class="profile-img">
+            <div class="profile-card">
+                <div class="profile-card-image-wrapper">
+                    <img src="WhatsApp Image 2026-06-04 at 10.17.42 PM.jpeg" alt="Arnav Pandey"
+                        class="profile-card-img">
+                </div>
                 <h3>Arnav Pandey</h3>
-                <p>Co-Founder</p>
+                <p class="role">Co-Founder & Content Lead</p>
+                <p class="bio">Focuses on content creation, video editing setups, and driving audience engagement
+                    strategies.</p>
             </div>
         </div>
 
-        <div class="about-me">
-            <p>Welcome! We are passionate content creators and digital marketing enthusiasts. Focused on building our presence through "Crimson Dusk Gaming" and exploring the intersections of technology, gaming, and digital strategy.</p>
+        <!-- About Summary -->
+        <div
+            style="max-width: 800px; margin: 40px auto; background-color: var(--card-bg); border: 1px solid var(--card-border); padding: 30px; border-radius: 20px; box-shadow: 0 4px 25px var(--shadow);">
+            <p style="font-size: 1.05rem; line-height: 1.7; color: var(--text-secondary);">
+                Welcome! We are passionate content creators and digital marketing enthusiasts. Through <strong>Crimson
+                    Dusk Gaming</strong>, we build our online presence, explore the intersections of gaming and
+                technology, and implement data-driven digital growth strategies.
+            </p>
         </div>
-        
-        <div class="nav-links">
-            <a href="projects.html" class="nav-btn btn-1">🚀 View Projects</a>
-            <a href="project2.html" class="nav-btn btn-2">📂 Explore Interests</a>
-            <a href="#" class="nav-btn btn-3">✍️ My Blog</a>
-            <a href="contact.html" class="nav-btn btn-4">📧 Contact Me</a>
-            <a href="#" class="nav-btn btn-5">💡 Skills</a>
+
+        <!-- Action Grid / Navigation Buttons -->
+        <div class="action-grid">
+            <a href="projects.html" class="action-btn btn-saffron">
+                <i class="fa-solid fa-rocket"></i> View Projects
+            </a>
+            <a href="project2.html" class="action-btn btn-green">
+                <i class="fa-solid fa-folder-open"></i> Explore Interests
+            </a>
+            <a href="contact.html" class="action-btn btn-blue">
+                <i class="fa-solid fa-paper-plane"></i> Contact Us
+            </a>
+            <a href="#skills" class="action-btn btn-white">
+                <i class="fa-solid fa-screwdriver-wrench"></i> Skills & Expertise
+            </a>
         </div>
     </header>
 
-    <section class="partners">
-        <h2>Our Creative Team</h2>
-        <div class="grid">
-            <div class="partner-card">
-                <img src="WhatsApp Image 2026-06-04 at 3.35.36 AM.jpeg" alt="Yatindra" class="partner-img">
+    <!-- Skills Section -->
+    <section id="skills" class="section-padding container">
+        <h2 class="section-title">Skills & Expertise</h2>
+        <div class="skills-container">
+            <div class="skills-category">
+                <h3 class="skills-category-title"><i class="fa-solid fa-clapperboard"></i> Content Creation & Design
+                </h3>
+                <div class="skills-grid">
+                    <span class="skill-badge"><i class="fa-solid fa-video"></i> Video Editing</span>
+                    <span class="skill-badge"><i class="fa-solid fa-bullseye"></i> Content Strategy</span>
+                    <span class="skill-badge"><i class="fa-solid fa-users"></i> Audience Engagement</span>
+                    <span class="skill-badge"><i class="fa-solid fa-broadcast-tower"></i> Live Streaming Setups</span>
+                </div>
+            </div>
+
+            <div class="skills-category">
+                <h3 class="skills-category-title"><i class="fa-solid fa-laptop-code"></i> Technology & Operations</h3>
+                <div class="skills-grid">
+                    <span class="skill-badge"><i class="fa-solid fa-bolt"></i> Device Optimization</span>
+                    <span class="skill-badge"><i class="fa-solid fa-magnifying-glass"></i> Technical Research</span>
+                    <span class="skill-badge"><i class="fa-solid fa-microchip"></i> Hardware Maintenance</span>
+                    <span class="skill-badge"><i class="fa-solid fa-gears"></i> Troubleshooting</span>
+                </div>
+            </div>
+
+            <div class="skills-category">
+                <h3 class="skills-category-title"><i class="fa-solid fa-chart-line"></i> Marketing & Growth</h3>
+                <div class="skills-grid">
+                    <span class="skill-badge"><i class="fa-solid fa-share-nodes"></i> Digital Marketing</span>
+                    <span class="skill-badge"><i class="fa-solid fa-chart-simple"></i> Analytics & Metrics</span>
+                    <span class="skill-badge"><i class="fa-solid fa-id-card"></i> Brand Positioning</span>
+                    <span class="skill-badge"><i class="fa-solid fa-globe"></i> SEO Optimization</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Creative Collaborators -->
+    <section class="section-padding container">
+        <h2 class="section-title">Our Creative Team</h2>
+        <div class="collaborator-grid">
+            <div class="collaborator-card">
+                <div class="collab-img-wrapper">
+                    <img src="WhatsApp Image 2026-06-04 at 3.35.36 AM.jpeg" alt="Yatindra Nath Bhatt"
+                        class="collab-img">
+                </div>
                 <h3>Yatindra Nath Bhatt</h3>
-                <p>Creative Collaborator</p>
+                <p class="role">Creative Collaborator</p>
             </div>
-            <div class="partner-card">
-                <img src="WhatsApp Image 2026-06-04 at 3.36.34 AM.jpeg" alt="Pradeep" class="partner-img">
+            <div class="collaborator-card">
+                <div class="collab-img-wrapper">
+                    <img src="WhatsApp Image 2026-06-04 at 3.36.34 AM.jpeg" alt="Pradeep Kumar Mukherjee"
+                        class="collab-img">
+                </div>
                 <h3>Pradeep Kumar Mukherjee</h3>
-                <p>Technical Insights</p>
+                <p class="role">Technical Insights</p>
             </div>
         </div>
     </section>
 
-    <section class="social-section">
-        <h3>Connect With Me</h3>
+    <!-- Social Connect -->
+    <section class="section-padding container" style="border-bottom: none;">
+        <h2 class="section-title">Connect With Us</h2>
         <div class="social-grid">
-            <a href="https://youtube.com/@crimsonduskgaming647?si=PKHKtWawF-EWZlB4" target="_blank">YouTube</a>
-            <a href="https://www.linkedin.com/in/anamay-mukherji-0909a73ab" target="_blank">LinkedIn</a>
-            <a href="https://www.instagram.com/anamay_383738" target="_blank">Instagram</a>
+            <a href="https://youtube.com/@crimsonduskgaming647?si=PKHKtWawF-EWZlB4" target="_blank"
+                class="social-btn yt">
+                <i class="fa-brands fa-youtube"></i> YouTube
+            </a>
+            <a href="https://www.linkedin.com/in/anamay-mukherji-0909a73ab" target="_blank" class="social-btn li">
+                <i class="fa-brands fa-linkedin"></i> LinkedIn
+            </a>
+            <a href="https://www.instagram.com/anamay_383738" target="_blank" class="social-btn ig">
+                <i class="fa-brands fa-instagram"></i> Instagram
+            </a>
         </div>
     </section>
 
-    <footer>
-        <p>&copy; 2026 Anamay Mukherji. All rights reserved.</p>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-logo">Crimson Dusk Gaming</div>
+            <p>&copy; 2026 Anamay Mukherji & Arnav Pandey. All rights reserved.</p>
+        </div>
     </footer>
 
+    <!-- Main JavaScript -->
+    <script src="script.js"></script>
 </body>
+
 </html>
