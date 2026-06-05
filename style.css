@@ -127,6 +127,7 @@ a {
     justify-content: space-between;
     align-items: center;
     height: 70px;
+    gap: 16px;
 }
 
 .brand {
@@ -157,6 +158,7 @@ a {
 
 .brand-text {
     background: linear-gradient(135deg, var(--accent-saffron), var(--text-primary), var(--accent-green));
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -174,6 +176,60 @@ a {
     padding: 8px 16px;
     border-radius: 8px;
     transition: all var(--transition-fast);
+}
+
+@media (max-width: 900px) {
+    .navbar-container {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 10px 0;
+    }
+
+    .menu-toggle-btn {
+        display: flex;
+    }
+
+    .nav-menu {
+        position: absolute;
+        top: 70px;
+        right: 20px;
+        width: calc(100% - 40px);
+        max-width: 300px;
+        flex-direction: column;
+        align-items: stretch;
+        background-color: var(--navbar-bg);
+        border: 1px solid var(--card-border);
+        border-radius: 20px;
+        padding: 18px;
+        gap: 12px;
+        display: none;
+        opacity: 0;
+        transform: translateY(-10px);
+        transition: opacity var(--transition-normal), transform var(--transition-normal);
+        z-index: 1001;
+    }
+
+    .nav-menu.open {
+        display: flex;
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .nav-menu li {
+        width: 100%;
+    }
+
+    .nav-link {
+        width: 100%;
+        text-align: left;
+        padding: 12px 14px;
+        background-color: var(--bg-secondary);
+    }
+
+    .theme-toggle-btn {
+        width: 100%;
+        justify-content: center;
+    }
 }
 
 .nav-link:hover {
@@ -244,6 +300,7 @@ a {
     line-height: 1.1;
     margin-bottom: 15px;
     background: linear-gradient(135deg, var(--accent-saffron), #ffffff, var(--accent-green));
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: 800;
@@ -251,6 +308,7 @@ a {
 
 body.light-mode .hero-title {
     background: linear-gradient(135deg, var(--accent-saffron), var(--text-primary), var(--accent-green));
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -795,6 +853,7 @@ textarea.form-control {
     font-size: 1.3rem;
     margin-bottom: 10px;
     background: linear-gradient(135deg, var(--accent-saffron), var(--text-primary), var(--accent-green));
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -850,6 +909,7 @@ textarea.form-control {
     font-weight: 800;
     font-family: var(--font-heading);
     background: linear-gradient(135deg, var(--accent-saffron), var(--accent-green));
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-bottom: 5px;

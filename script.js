@@ -31,7 +31,49 @@ if (themeToggle) {
     });
 }
 
-// 2. Scroll to Top Button
+// 2. Responsive Mobile Navigation + Active Page Highlight
+document.addEventListener('DOMContentLoaded', () => {
+    const navbars = document.querySelectorAll('.navbar');
+    navbars.forEach((navbar) => {
+        const navMenu = navbar.querySelector('.nav-menu');
+        if (!navMenu) return;
+
+        let menuToggle = navbar.querySelector('.menu-toggle-btn');
+        if (!menuToggle) {
+            menuToggle = document.createElement('button');
+            menuToggle.type = 'button';
+            menuToggle.className = 'menu-toggle-btn';
+            menuToggle.setAttribute('aria-label', 'Toggle navigation menu');
+            menuToggle.setAttribute('aria-expanded', 'false');
+            menuToggle.innerHTML = '<i class="fa-solid fa-bars"></i>';
+            navbar.insertBefore(menuToggle, navMenu);
+        }
+
+        menuToggle.addEventListener('click', () => {
+            const isOpen = navMenu.classList.toggle('open');
+            menuToggle.setAttribute('aria-expanded', isOpen.toString());
+        });
+
+        navMenu.querySelectorAll('.nav-link').forEach((link) => {
+            link.addEventListener('click', () => {
+                if (navMenu.classList.contains('open')) {
+                    navMenu.classList.remove('open');
+                    menuToggle.setAttribute('aria-expanded', 'false');
+                }
+            });
+        });
+    });
+
+    const currentPath = window.location.pathname.split('/').pop() || 'index.html';
+    document.querySelectorAll('.nav-link').forEach((link) => {
+        const href = link.getAttribute('href');
+        if (href === currentPath || (href === 'index.html' && currentPath === '')) {
+            link.classList.add('active');
+        }
+    });
+});
+
+// 3. Scroll to Top Button
 const scrollTopBtn = document.createElement('button');
 scrollTopBtn.innerHTML = '<i class="fa-solid fa-arrow-up"></i>';
 scrollTopBtn.className = 'scroll-top-btn';
