@@ -558,24 +558,52 @@ body.light-mode .hero-title {
     line-height: 1.7;
 }
 
-.services-cta {
-    text-align: center;
-    margin-top: 30px;
-}
+    .profile-page {
+        padding: 110px 0 60px 0;
+        max-width: 900px;
+        margin: 0 auto;
+    }
 
-.section-title {
-    font-size: 2.2rem;
-    text-align: center;
-    margin-bottom: 45px;
-    position: relative;
-}
+    .profile-card-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 24px;
+        margin-top: 30px;
+    }
 
-.section-title::after {
-    content: '';
-    display: block;
-    width: 60px;
-    height: 4px;
-    background: linear-gradient(90deg, var(--accent-saffron), var(--accent-green));
+    .profile-detail-card {
+        background-color: var(--card-bg);
+        border: 1px solid var(--card-border);
+        border-radius: 24px;
+        padding: 32px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.18);
+    }
+
+    .profile-page h2,
+    .profile-page h3 {
+        color: var(--text-primary);
+    }
+
+    .profile-quote {
+        font-size: 1.25rem;
+        font-style: italic;
+        margin: 18px 0 24px 0;
+        color: var(--accent-saffron);
+        line-height: 1.8;
+    }
+
+    .quote-source {
+        font-weight: 700;
+        color: var(--text-primary);
+        margin-bottom: 18px;
+    }
+
+    .profile-detail-card ul {
+        padding-left: 20px;
+        color: var(--text-secondary);
+        line-height: 1.8;
+    }
+
     margin: 12px auto 0 auto;
     border-radius: 2px;
 }
