@@ -520,6 +520,49 @@ body.light-mode .hero-title {
     line-height: 1.7;
 }
 
+.services-overview {
+    padding-top: 60px;
+}
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 24px;
+    margin-top: 30px;
+}
+
+.service-card {
+    background-color: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-radius: 24px;
+    padding: 28px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.18);
+    transition: transform var(--transition-normal), border-color var(--transition-normal);
+}
+
+.service-card:hover {
+    transform: translateY(-4px);
+    border-color: var(--card-hover-border);
+}
+
+.service-card h3 {
+    font-size: 1.25rem;
+    margin-bottom: 14px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.service-card p {
+    color: var(--text-secondary);
+    line-height: 1.7;
+}
+
+.services-cta {
+    text-align: center;
+    margin-top: 30px;
+}
+
 .section-title {
     font-size: 2.2rem;
     text-align: center;
